@@ -6,7 +6,7 @@ namespace UltimateQuiz
     {
         private string[] sportsQuestions =
             {
-            "Which country won the lastest women's football World Cup?",
+            "Which country won the latest women's football World Cup?",
             "What is the first name of the current F1 champion driver?",
             "How many stages were there in 2023 tour de France? [Enter a number]"
             };
