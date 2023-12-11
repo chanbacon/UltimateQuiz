@@ -115,11 +115,16 @@ namespace UltimateQuiz
         public static void InviteColleague()
         {
             Console.WriteLine("You did great!");
-            Console.WriteLine("Now, invite a colleague nearby to take the quiz!");
-            Console.WriteLine("Let's empty the screen first so your colleague won't see the answers! " +
-                " (press 'Enter' to continue)");
+            Console.WriteLine("Now, invite a colleague nearby to take the quiz!" +
+                "(press 'Enter' to continue)");
             Console.ReadLine();
-            Console.Clear();
+            try
+            {
+                Console.Clear();
+            }
+            catch
+            {
+            }
             Console.WriteLine("Press 'Enter' when your colleague is here.");
             Console.ReadLine();
         }
@@ -141,6 +146,7 @@ namespace UltimateQuiz
             else
             {
                 Console.WriteLine($"{p1.Name} and {p2.Name} are equally smart!!!".ToUpper());
+                Console.ReadLine();
             }
         }
 
